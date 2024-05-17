@@ -4,7 +4,7 @@
 #####
 [versions]
 accompanist = "0.34.0"
-androidGradlePlugin = "8.3.1"
+androidGradlePlugin = "8.4.0"
 androidx-activity-compose = "1.8.2"
 androidx-appcompat = "1.6.1"
 androidx-benchmark = "1.2.0"
@@ -52,6 +52,7 @@ secrets = "2.0.1"
 # @keep
 targetSdk = "33"
 version-catalog-update = "0.8.4"
+converterScalars = "2.11.0"
 
 [libraries]
 accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
@@ -130,6 +131,7 @@ okhttp3 = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
 robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
 rometools-modules = { module = "com.rometools:rome-modules", version.ref = "rome" }
 rometools-rome = { module = "com.rometools:rome", version.ref = "rome" }
+converter-scalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "converterScalars" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }

@@ -96,14 +96,13 @@ android {
 }
 
 dependencies {
+    implementation(libs.converter.scalars)
     val composeBom = platform(libs.androidx.compose.bom)
     implementation(composeBom)
     androidTestImplementation(composeBom)
 
     implementation(libs.kotlin.stdlib)
     implementation(libs.kotlinx.coroutines.android)
-
-    implementation(libs.retrofit)
 
     implementation(libs.androidx.compose.animation)
     implementation(libs.androidx.compose.foundation.layout)
@@ -137,6 +136,8 @@ dependencies {
 
     implementation(libs.google.android.material)
 
+    implementation ("com.squareup.retrofit2:retrofit:2.11.0")
+
     androidTestImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.core)
     androidTestImplementation(libs.androidx.test.runner)
@@ -153,4 +154,4 @@ dependencies {
 
 tasks.withType<Test>().configureEach {
     systemProperties.put("robolectric.logging", "stdout")
-} 
+}

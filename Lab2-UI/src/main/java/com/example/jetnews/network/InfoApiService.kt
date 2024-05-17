@@ -1,6 +1,5 @@
 package com.example.jetnews.network
 
-import javax.net.ssl.*
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.scalars.ScalarsConverterFactory
